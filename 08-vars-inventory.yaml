@@ -4,6 +4,6 @@
   tasks:
   - name: check variables 
     ansible.builtin.debug:
-      msg: "Hi, I am learning {{course}}, Trainer is {{trainer}}, duration is {{110 hours}}"
+      msg: "Hi, I am learning {{course}}, Trainer is {{trainer}}, duration is {{duration}}"
 
 #this playbook search for variables in inventory file
