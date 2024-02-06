@@ -1,0 +1,11 @@
+- name: loops
+  hosts: localhost 
+  tasks:
+  - name: print persons 
+    ansible.builtin.debug:
+      msg: "hello {{item}}" # item is a defaut keyword
+    loop:
+    - meena
+    - mana
+    - pina
+    - muna
