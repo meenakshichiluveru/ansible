@@ -4,18 +4,18 @@
   - variables.yaml
   vars_prompt:
   - name: person
-    prompt: enter your name from prompt
-    private: false
-  - name: wishes
-    prompt: enter wishes from prompt
-    private: false
-  vars: 
-    person: "meenakshi from play"
-    wishes: "morning from play"
+    prompt: Please enter your name 
+    private: false 
+  - name: wishes 
+    prompt: Please enter your wishes 
+    private: false 
+  vars:
+    person: "meenakshi from PLAY"
+    wishes: "morning from PLAY"
   tasks:
   - name: check variables 
-    vars: 
-      person: "meenakshi from task"
-      wishes: "morning from task"
+    vars:
+      person: "meenakshi from TASK"
+      wishes: "morning from TASK"
     ansible.builtin.debug:
       msg: "Hi, hello {{person}}, good {{wishes}}"
