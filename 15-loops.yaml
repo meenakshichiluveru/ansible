@@ -10,5 +10,5 @@
     loop:
     - {name: "git", state: "present"}
     - {name: "postfix", state: "absent"}
-    - {name: "mysql", state: "absentt"}
+    - {name: "mysql", state: "absent"}
     - {name: "nginx", state: "present"}
