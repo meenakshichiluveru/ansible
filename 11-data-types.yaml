@@ -1,0 +1,28 @@
+- name: chack data types 
+  hosts: localhost 
+  vars:
+    Name: shivakumar #keyvaluepair
+    Skills: # skills is a list type 
+    - devops 
+    - shell 
+    - linux 
+    - ansible 
+    experience: # experience is a mapit contains key value pairs 
+      devops: 6
+      aws: 4 
+      docker: 4
+    trainer: true 
+
+  tasks:
+  - name: print the key value pair 
+    ansible.builtin.debug:
+      msg: "name: {{Name}}"
+  - name : print the list 
+    ansible.builtin.debug:
+      msg: "skills: {{Skills}}"
+  - name: print the map
+    ansible.builtin.debug:
+      msg: "experience: {{experience}}"
+  - name: print the bool type 
+    ansible.builtin.debug:
+      msg: "is he trainer?: {{trainer}}"    
